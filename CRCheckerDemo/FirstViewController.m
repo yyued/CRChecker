@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "CRCounter.h"
 
 @interface FirstViewController ()
 
@@ -39,6 +40,10 @@
 - (IBAction)handleSecondViewControllerButtonTapped:(id)sender {
     SecondViewController *nextViewController = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:nextViewController animated:YES];
+}
+
+- (IBAction)handleDashboardButtonTapped:(id)sender {
+    NSLog(@"%@", [CRCounter counterDictionary][@"SecondViewController"]);
 }
 
 @end
