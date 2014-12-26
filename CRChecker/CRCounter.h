@@ -10,6 +10,8 @@
 
 @interface CRCounter : NSObject
 
++ (void)addCustomClassPrefix:(NSString *)argPrefix;
+
 + (NSDictionary *)counterDictionary;
 
 + (void)increaseWithClass:(Class)argClass;

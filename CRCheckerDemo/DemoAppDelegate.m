@@ -8,7 +8,7 @@
 
 #import "DemoAppDelegate.h"
 #import "DemoFirstViewController.h"
-#import "CRCounter.h"
+#import "CRChecker.h"
 
 @interface DemoAppDelegate ()
 
@@ -16,8 +16,10 @@
 
 @implementation DemoAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [CRChecker addCustomClassPrefix:@"Demo"];
+    
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[DemoFirstViewController alloc] initWithNibName:nil bundle:nil]];

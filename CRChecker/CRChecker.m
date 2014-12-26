@@ -7,11 +7,16 @@
 //
 
 #import "CRChecker.h"
+#import "CRCounter.h"
 #import "CRDashBoardViewController.h"
 #import "NSObject+CRChecker.h"
 #import <objc/runtime.h>
 
 @implementation CRChecker
+
++ (void)addCustomClassPrefix:(NSString *)argPrefix {
+    [CRCounter addCustomClassPrefix:argPrefix];
+}
 
 + (void)load {
     Method originalInitMethod =  class_getInstanceMethod([NSObject class], @selector(init));

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */; };
+		6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338591A4D1D8800BE6497 /* CRStatusBar.m */; };
 		F014BD7C1A4C5FD20009F87E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7B1A4C5FD20009F87E /* main.m */; };
 		F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7E1A4C5FD20009F87E /* DemoAppDelegate.m */; };
 		F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD811A4C5FD20009F87E /* DemoSecondViewController.m */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		631338551A4CFFC800BE6497 /* CRDashBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDashBoardViewController.h; sourceTree = "<group>"; };
 		631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDashBoardViewController.m; sourceTree = "<group>"; };
+		631338581A4D1D8800BE6497 /* CRStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRStatusBar.h; sourceTree = "<group>"; };
+		631338591A4D1D8800BE6497 /* CRStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRStatusBar.m; sourceTree = "<group>"; };
 		F014BD771A4C5FD20009F87E /* CRCheckerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRCheckerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F014BD7A1A4C5FD20009F87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F014BD7B1A4C5FD20009F87E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				F014BDA41A4C636D0009F87E /* NSObject+CRChecker.m */,
 				631338551A4CFFC800BE6497 /* CRDashBoardViewController.h */,
 				631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */,
+				631338581A4D1D8800BE6497 /* CRStatusBar.h */,
+				631338591A4D1D8800BE6497 /* CRStatusBar.m */,
 			);
 			path = CRChecker;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			files = (
 				F014BD9F1A4C60350009F87E /* CRChecker.m in Sources */,
 				F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */,
+				6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */,
 				F014BDAE1A4C6F730009F87E /* DemoModalViewController.m in Sources */,
 				631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */,
 				F014BDA51A4C636D0009F87E /* NSObject+CRChecker.m in Sources */,

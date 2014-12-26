@@ -10,6 +10,14 @@
 
 @interface CRChecker : NSObject
 
+/**
+ *  If you add custom class prefix, CRChecker will check these class only.
+ */
++ (void)addCustomClassPrefix:(NSString *)argPrefix;
+
+/**
+ *  Present Dash Board
+ */
 + (void)presentDashBoardViewController;
 
 @end

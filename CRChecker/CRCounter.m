@@ -8,6 +8,7 @@
 
 #import "CRCounter.h"
 
+static NSSet *customClassPrefix;
 static NSMutableDictionary *counterDictionary;
 static dispatch_queue_t counterQueue = NULL;
 
@@ -15,7 +16,20 @@ static dispatch_queue_t counterQueue = NULL;
 
 + (void)load {
     counterDictionary = [NSMutableDictionary dictionary];
+    customClassPrefix = nil;
     counterQueue = dispatch_queue_create("CRCheckerCounterQueue", NULL);
+}
+
++ (void)addCustomClassPrefix:(NSString *)argPrefix {
+    dispatch_sync(counterQueue, ^{
+        if (customClassPrefix == nil) {
+            [counterDictionary removeAllObjects];
+            customClassPrefix = [NSSet set];
+        }
+        NSMutableSet *mutableCustoClassPrefix = [customClassPrefix mutableCopy];
+        [mutableCustoClassPrefix addObject:argPrefix];
+        customClassPrefix = [mutableCustoClassPrefix copy];
+    });
 }
 
 + (NSDictionary *)counterDictionary {
@@ -23,6 +37,9 @@ static dispatch_queue_t counterQueue = NULL;
 }
 
 + (void)increaseWithClass:(Class)argClass {
+    if ([self isCustomClass:argClass]) {
+        return;
+    }
     dispatch_sync(counterQueue, ^{
         NSString *className = NSStringFromClass(argClass);
         NSNumber *countNumber = [counterDictionary valueForKey:className];
@@ -37,6 +54,9 @@ static dispatch_queue_t counterQueue = NULL;
 }
 
 + (void)decreaseWithClass:(Class)argClass {
+    if ([self isCustomClass:argClass]) {
+        return;
+    }
     dispatch_sync(counterQueue, ^{
         NSString *className = NSStringFromClass(argClass);
         NSNumber *countNumber = [counterDictionary valueForKey:className];
@@ -48,6 +68,18 @@ static dispatch_queue_t counterQueue = NULL;
         }
         [counterDictionary setObject:countNumber forKey:className];
     });
+}
+
++ (BOOL)isCustomClass:(Class)argClass {
+    if (customClassPrefix != nil) {
+        for (NSString *classPrefix in customClassPrefix) {
+            NSString *className = NSStringFromClass(argClass);
+            if (![className hasPrefix:classPrefix]) {
+                return YES;
+            }
+        }
+    }
+    return NO;
 }
 
 @end
