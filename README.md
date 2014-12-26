@@ -26,3 +26,11 @@ You see, The DemoSecondViewController and DemoModalViewController still 4 object
 And you find a circular reference problem, try to fix it.
 
 * Usage
+
+pod "CRChecker" or "Download ZIP -> add CRChecker Dir.'s file to your project"
+
+If you eagering check your Prefix class Only.
+
+use ` [CRChecker addCustomClassPrefix:@"Demo"];`
+
+Else remove it, CRChecker will check all classes including system library.
