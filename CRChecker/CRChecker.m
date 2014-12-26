@@ -7,6 +7,7 @@
 //
 
 #import "CRChecker.h"
+#import "CRDashBoardViewController.h"
 #import "NSObject+CRChecker.h"
 #import <objc/runtime.h>
 
@@ -20,6 +21,14 @@
     Method originalDeallocMethod =  class_getInstanceMethod([NSObject class], NSSelectorFromString(@"dealloc"));
     Method swizzDeallocMethod = class_getInstanceMethod([NSObject class], @selector(cr_dealloc));
     method_exchangeImplementations(originalDeallocMethod, swizzDeallocMethod);
+}
+
++ (void)presentDashBoardViewController {
+    CRDashBoardViewController *dashBoardViewController = [[CRDashBoardViewController alloc] init];
+    UINavigationController *dashBoardNavigationController = [[UINavigationController alloc]
+                                                             initWithRootViewController:dashBoardViewController];
+    [[[[[UIApplication sharedApplication] delegate] window] rootViewController]
+     presentModalViewController:dashBoardNavigationController animated:YES];
 }
 
 @end

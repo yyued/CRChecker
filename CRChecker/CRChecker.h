@@ -10,4 +10,6 @@
 
 @interface CRChecker : NSObject
 
++ (void)presentDashBoardViewController;
+
 @end

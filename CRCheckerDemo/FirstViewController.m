@@ -8,7 +8,7 @@
 
 #import "FirstViewController.h"
 #import "SecondViewController.h"
-#import "CRCounter.h"
+#import "CRChecker.h"
 
 @interface FirstViewController ()
 
@@ -43,7 +43,8 @@
 }
 
 - (IBAction)handleDashboardButtonTapped:(id)sender {
-    NSLog(@"%@", [CRCounter counterDictionary][@"SecondViewController"]);
+    [CRChecker presentDashBoardViewController];
+//    NSLog(@"%@", [CRCounter counterDictionary][@"SecondViewController"]);
 }
 
 @end
