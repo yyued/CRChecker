@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */; };
 		F014BD7C1A4C5FD20009F87E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7B1A4C5FD20009F87E /* main.m */; };
-		F014BD7F1A4C5FD20009F87E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7E1A4C5FD20009F87E /* AppDelegate.m */; };
-		F014BD821A4C5FD20009F87E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD811A4C5FD20009F87E /* SecondViewController.m */; };
+		F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7E1A4C5FD20009F87E /* DemoAppDelegate.m */; };
+		F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD811A4C5FD20009F87E /* DemoSecondViewController.m */; };
 		F014BD871A4C5FD20009F87E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F014BD861A4C5FD20009F87E /* Images.xcassets */; };
 		F014BD961A4C5FD20009F87E /* CRCheckerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD951A4C5FD20009F87E /* CRCheckerDemoTests.m */; };
 		F014BD9F1A4C60350009F87E /* CRChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD9E1A4C60350009F87E /* CRChecker.m */; };
 		F014BDA51A4C636D0009F87E /* NSObject+CRChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDA41A4C636D0009F87E /* NSObject+CRChecker.m */; };
 		F014BDA81A4C64340009F87E /* CRCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDA71A4C64340009F87E /* CRCounter.m */; };
-		F014BDAA1A4C6F190009F87E /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDA91A4C6F190009F87E /* SecondViewController.xib */; };
-		F014BDAE1A4C6F730009F87E /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDAC1A4C6F730009F87E /* ModalViewController.m */; };
-		F014BDAF1A4C6F730009F87E /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDAD1A4C6F730009F87E /* ModalViewController.xib */; };
-		F014BDB31A4C72680009F87E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDB11A4C72680009F87E /* FirstViewController.m */; };
-		F014BDB41A4C72680009F87E /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDB21A4C72680009F87E /* FirstViewController.xib */; };
+		F014BDAA1A4C6F190009F87E /* DemoSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDA91A4C6F190009F87E /* DemoSecondViewController.xib */; };
+		F014BDAE1A4C6F730009F87E /* DemoModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDAC1A4C6F730009F87E /* DemoModalViewController.m */; };
+		F014BDAF1A4C6F730009F87E /* DemoModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDAD1A4C6F730009F87E /* DemoModalViewController.xib */; };
+		F014BDB31A4C72680009F87E /* DemoFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDB11A4C72680009F87E /* DemoFirstViewController.m */; };
+		F014BDB41A4C72680009F87E /* DemoFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDB21A4C72680009F87E /* DemoFirstViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +39,10 @@
 		F014BD771A4C5FD20009F87E /* CRCheckerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRCheckerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F014BD7A1A4C5FD20009F87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F014BD7B1A4C5FD20009F87E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F014BD7D1A4C5FD20009F87E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F014BD7E1A4C5FD20009F87E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F014BD801A4C5FD20009F87E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F014BD811A4C5FD20009F87E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F014BD7D1A4C5FD20009F87E /* DemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
+		F014BD7E1A4C5FD20009F87E /* DemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
+		F014BD801A4C5FD20009F87E /* DemoSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSecondViewController.h; sourceTree = "<group>"; };
+		F014BD811A4C5FD20009F87E /* DemoSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoSecondViewController.m; sourceTree = "<group>"; };
 		F014BD861A4C5FD20009F87E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F014BD8F1A4C5FD20009F87E /* CRCheckerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRCheckerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F014BD941A4C5FD20009F87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,13 +53,13 @@
 		F014BDA41A4C636D0009F87E /* NSObject+CRChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CRChecker.m"; sourceTree = "<group>"; };
 		F014BDA61A4C64340009F87E /* CRCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCounter.h; sourceTree = "<group>"; };
 		F014BDA71A4C64340009F87E /* CRCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCounter.m; sourceTree = "<group>"; };
-		F014BDA91A4C6F190009F87E /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
-		F014BDAB1A4C6F730009F87E /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
-		F014BDAC1A4C6F730009F87E /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		F014BDAD1A4C6F730009F87E /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
-		F014BDB01A4C72680009F87E /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F014BDB11A4C72680009F87E /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F014BDB21A4C72680009F87E /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		F014BDA91A4C6F190009F87E /* DemoSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoSecondViewController.xib; sourceTree = "<group>"; };
+		F014BDAB1A4C6F730009F87E /* DemoModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModalViewController.h; sourceTree = "<group>"; };
+		F014BDAC1A4C6F730009F87E /* DemoModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModalViewController.m; sourceTree = "<group>"; };
+		F014BDAD1A4C6F730009F87E /* DemoModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoModalViewController.xib; sourceTree = "<group>"; };
+		F014BDB01A4C72680009F87E /* DemoFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFirstViewController.h; sourceTree = "<group>"; };
+		F014BDB11A4C72680009F87E /* DemoFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFirstViewController.m; sourceTree = "<group>"; };
+		F014BDB21A4C72680009F87E /* DemoFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoFirstViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,17 +117,17 @@
 		F014BD781A4C5FD20009F87E /* CRCheckerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F014BD7D1A4C5FD20009F87E /* AppDelegate.h */,
-				F014BD7E1A4C5FD20009F87E /* AppDelegate.m */,
-				F014BDB01A4C72680009F87E /* FirstViewController.h */,
-				F014BDB11A4C72680009F87E /* FirstViewController.m */,
-				F014BDB21A4C72680009F87E /* FirstViewController.xib */,
-				F014BD801A4C5FD20009F87E /* SecondViewController.h */,
-				F014BD811A4C5FD20009F87E /* SecondViewController.m */,
-				F014BDA91A4C6F190009F87E /* SecondViewController.xib */,
-				F014BDAB1A4C6F730009F87E /* ModalViewController.h */,
-				F014BDAC1A4C6F730009F87E /* ModalViewController.m */,
-				F014BDAD1A4C6F730009F87E /* ModalViewController.xib */,
+				F014BD7D1A4C5FD20009F87E /* DemoAppDelegate.h */,
+				F014BD7E1A4C5FD20009F87E /* DemoAppDelegate.m */,
+				F014BDB01A4C72680009F87E /* DemoFirstViewController.h */,
+				F014BDB11A4C72680009F87E /* DemoFirstViewController.m */,
+				F014BDB21A4C72680009F87E /* DemoFirstViewController.xib */,
+				F014BD801A4C5FD20009F87E /* DemoSecondViewController.h */,
+				F014BD811A4C5FD20009F87E /* DemoSecondViewController.m */,
+				F014BDA91A4C6F190009F87E /* DemoSecondViewController.xib */,
+				F014BDAB1A4C6F730009F87E /* DemoModalViewController.h */,
+				F014BDAC1A4C6F730009F87E /* DemoModalViewController.m */,
+				F014BDAD1A4C6F730009F87E /* DemoModalViewController.xib */,
 				F014BD861A4C5FD20009F87E /* Images.xcassets */,
 				F014BD791A4C5FD20009F87E /* Supporting Files */,
 			);
@@ -240,9 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F014BDAF1A4C6F730009F87E /* ModalViewController.xib in Resources */,
-				F014BDB41A4C72680009F87E /* FirstViewController.xib in Resources */,
-				F014BDAA1A4C6F190009F87E /* SecondViewController.xib in Resources */,
+				F014BDAF1A4C6F730009F87E /* DemoModalViewController.xib in Resources */,
+				F014BDB41A4C72680009F87E /* DemoFirstViewController.xib in Resources */,
+				F014BDAA1A4C6F190009F87E /* DemoSecondViewController.xib in Resources */,
 				F014BD871A4C5FD20009F87E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,14 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F014BD9F1A4C60350009F87E /* CRChecker.m in Sources */,
-				F014BD821A4C5FD20009F87E /* SecondViewController.m in Sources */,
-				F014BDAE1A4C6F730009F87E /* ModalViewController.m in Sources */,
+				F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */,
+				F014BDAE1A4C6F730009F87E /* DemoModalViewController.m in Sources */,
 				631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */,
 				F014BDA51A4C636D0009F87E /* NSObject+CRChecker.m in Sources */,
 				F014BDA81A4C64340009F87E /* CRCounter.m in Sources */,
-				F014BD7F1A4C5FD20009F87E /* AppDelegate.m in Sources */,
+				F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */,
 				F014BD7C1A4C5FD20009F87E /* main.m in Sources */,
-				F014BDB31A4C72680009F87E /* FirstViewController.m in Sources */,
+				F014BDB31A4C72680009F87E /* DemoFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -89,6 +89,7 @@ static NSSet *systemLibraries;
                        @"TW",
                        @"UI",
                        @"WK",
+                       @"TI",
                        nil];
 }
 
@@ -127,6 +128,9 @@ static NSSet *systemLibraries;
                 }
             }
         }
+        if ([counterDictionary[keyString] integerValue] <= 0) {
+            shouldIgnore = YES;
+        }
         if (shouldIgnore) {
             [finalKeys removeObject:keyString];
             continue;
@@ -137,6 +141,7 @@ static NSSet *systemLibraries;
         [tmpCounterDictionary setObject:counterDictionary[keyString] forKey:keyString];
     }
     self.finalCounterDictionary = [tmpCounterDictionary copy];
+    [[self tableView] reloadData];
 }
 
 #pragma mark - UITableView

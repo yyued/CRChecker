@@ -6,16 +6,16 @@
 //  Copyright (c) 2014年 崔 明辉. All rights reserved.
 //
 
-#import "SecondViewController.h"
-#import "ModalViewController.h"
+#import "DemoSecondViewController.h"
+#import "DemoModalViewController.h"
 
-@interface SecondViewController ()
+@interface DemoSecondViewController ()
 
-@property (nonatomic, strong) ModalViewController *firstStrongReference;
+@property (nonatomic, strong) DemoModalViewController *firstStrongReference;
 
 @end
 
-@implementation SecondViewController
+@implementation DemoSecondViewController
 
 - (void)dealloc {
     NSLog(@"SecondViewController Dealloc");
@@ -36,7 +36,7 @@
 }
 
 - (IBAction)handlePresentModalViewControllerButtonTapped:(id)sender {
-    self.firstStrongReference = [[ModalViewController alloc] initWithNibName:nil bundle:nil];
+    self.firstStrongReference = [[DemoModalViewController alloc] initWithNibName:nil bundle:nil];
     self.firstStrongReference.strongReference = self;
     [self presentViewController:self.firstStrongReference animated:YES completion:^{
         

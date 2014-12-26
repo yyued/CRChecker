@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 崔 明辉. All rights reserved.
 //
 
-#import "ModalViewController.h"
+#import "DemoModalViewController.h"
 
-@interface ModalViewController ()
+@interface DemoModalViewController ()
 
 @end
 
-@implementation ModalViewController
+@implementation DemoModalViewController
 
 - (void)dealloc {
     NSLog(@"ModalViewController Dealloc");

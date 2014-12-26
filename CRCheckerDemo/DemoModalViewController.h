@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModalViewController : UIViewController
+@interface DemoModalViewController : UIViewController
 
 /**
  *  We make strong reference for ViewController, we create a circular reference example.

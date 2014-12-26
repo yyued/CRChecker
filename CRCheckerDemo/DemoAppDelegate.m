@@ -6,21 +6,21 @@
 //  Copyright (c) 2014年 崔 明辉. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "FirstViewController.h"
+#import "DemoAppDelegate.h"
+#import "DemoFirstViewController.h"
 #import "CRCounter.h"
 
-@interface AppDelegate ()
+@interface DemoAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation DemoAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[FirstViewController alloc] initWithNibName:nil bundle:nil]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[DemoFirstViewController alloc] initWithNibName:nil bundle:nil]];
     [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
     return YES;

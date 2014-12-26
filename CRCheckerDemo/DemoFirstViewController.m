@@ -6,15 +6,15 @@
 //  Copyright (c) 2014年 崔 明辉. All rights reserved.
 //
 
-#import "FirstViewController.h"
-#import "SecondViewController.h"
+#import "DemoFirstViewController.h"
+#import "DemoSecondViewController.h"
 #import "CRChecker.h"
 
-@interface FirstViewController ()
+@interface DemoFirstViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation DemoFirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,7 +38,7 @@
 */
 
 - (IBAction)handleSecondViewControllerButtonTapped:(id)sender {
-    SecondViewController *nextViewController = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
+    DemoSecondViewController *nextViewController = [[DemoSecondViewController alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:nextViewController animated:YES];
 }
 
