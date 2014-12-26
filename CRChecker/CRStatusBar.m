@@ -21,6 +21,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self addSubview:self.tipsButton];
+        self.userInteractionEnabled = YES;
     }
     return self;
 }
