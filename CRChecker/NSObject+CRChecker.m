@@ -18,7 +18,7 @@ static CRStatusBar *statusBar;
 @implementation NSObject (CRChecker)
 
 + (void)load {
-    statusBar = [[CRStatusBar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([[UIScreen mainScreen] bounds]), 20.0)];
+    statusBar = [[CRStatusBar alloc] initWithFrame:CGRectZero];
 }
 
 - (void)cr_dealloc {

@@ -18,7 +18,7 @@
 @implementation CRStatusBar
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:CGRectZero];
     if (self) {
         [self addSubview:self.tipsButton];
         self.userInteractionEnabled = YES;
@@ -29,6 +29,7 @@
 - (UIButton *)tipsButton {
     if (_tipsButton == nil) {
         _tipsButton = [[UIButton alloc] initWithFrame:self.bounds];
+        _tipsButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _tipsButton.backgroundColor = [UIColor blackColor];
         [_tipsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_tipsButton setTitle:@"Tap To Present CRChecker DashBoard" forState:UIControlStateNormal];
@@ -42,6 +43,10 @@
 
 - (void)handleTipsButtonTapped {
     [CRChecker presentDashBoardViewController];
+}
+
+- (void)didMoveToSuperview {
+    self.frame = CGRectMake(0, 0, CGRectGetWidth(self.superview.frame), 20.0);
 }
 
 /*
