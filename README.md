@@ -33,4 +33,6 @@ If you eagering check your Prefix class Only.
 
 use ` [CRChecker addCustomClassPrefix:@"Demo"];`
 
-Else remove it, CRChecker will check all classes including system library.
+CRChecker will record all Classes belong [NSBundle MainBundle]
+
+V1.0.1 And now, you are able to access(debug) every objects. ~ 2014.11.29
