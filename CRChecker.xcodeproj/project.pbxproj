@@ -22,6 +22,8 @@
 		F014BDAF1A4C6F730009F87E /* DemoModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDAD1A4C6F730009F87E /* DemoModalViewController.xib */; };
 		F014BDB31A4C72680009F87E /* DemoFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDB11A4C72680009F87E /* DemoFirstViewController.m */; };
 		F014BDB41A4C72680009F87E /* DemoFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDB21A4C72680009F87E /* DemoFirstViewController.xib */; };
+		F08EE7411A519B700037FBDA /* NSObject+CRObjectStorager.m in Sources */ = {isa = PBXBuildFile; fileRef = F08EE7401A519B700037FBDA /* NSObject+CRObjectStorager.m */; };
+		F08EE7441A51AA4A0037FBDA /* CRObjectBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08EE7431A51AA4A0037FBDA /* CRObjectBoardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		F014BDB01A4C72680009F87E /* DemoFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFirstViewController.h; sourceTree = "<group>"; };
 		F014BDB11A4C72680009F87E /* DemoFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFirstViewController.m; sourceTree = "<group>"; };
 		F014BDB21A4C72680009F87E /* DemoFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoFirstViewController.xib; sourceTree = "<group>"; };
+		F08EE73F1A519B700037FBDA /* NSObject+CRObjectStorager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CRObjectStorager.h"; sourceTree = "<group>"; };
+		F08EE7401A519B700037FBDA /* NSObject+CRObjectStorager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CRObjectStorager.m"; sourceTree = "<group>"; };
+		F08EE7421A51AA4A0037FBDA /* CRObjectBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRObjectBoardViewController.h; sourceTree = "<group>"; };
+		F08EE7431A51AA4A0037FBDA /* CRObjectBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRObjectBoardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,12 @@
 				F014BDA71A4C64340009F87E /* CRCounter.m */,
 				F014BDA31A4C636D0009F87E /* NSObject+CRChecker.h */,
 				F014BDA41A4C636D0009F87E /* NSObject+CRChecker.m */,
+				F08EE73F1A519B700037FBDA /* NSObject+CRObjectStorager.h */,
+				F08EE7401A519B700037FBDA /* NSObject+CRObjectStorager.m */,
 				631338551A4CFFC800BE6497 /* CRDashBoardViewController.h */,
 				631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */,
+				F08EE7421A51AA4A0037FBDA /* CRObjectBoardViewController.h */,
+				F08EE7431A51AA4A0037FBDA /* CRObjectBoardViewController.m */,
 				631338581A4D1D8800BE6497 /* CRStatusBar.h */,
 				631338591A4D1D8800BE6497 /* CRStatusBar.m */,
 			);
@@ -269,6 +279,8 @@
 				F014BD9F1A4C60350009F87E /* CRChecker.m in Sources */,
 				F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */,
 				6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */,
+				F08EE7441A51AA4A0037FBDA /* CRObjectBoardViewController.m in Sources */,
+				F08EE7411A519B700037FBDA /* NSObject+CRObjectStorager.m in Sources */,
 				F014BDAE1A4C6F730009F87E /* DemoModalViewController.m in Sources */,
 				631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */,
 				F014BDA51A4C636D0009F87E /* NSObject+CRChecker.m in Sources */,

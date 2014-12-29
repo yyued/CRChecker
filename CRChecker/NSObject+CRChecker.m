@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
+#import "NSObject+CRObjectStorager.h"
 
 static CRStatusBar *statusBar;
 
@@ -38,7 +39,9 @@ static CRStatusBar *statusBar;
         }
         [CRCounter increaseWithClass:[self class]];
     }
-    return [self cr_init];
+    id object = [self cr_init];
+    [object cr_storagerAddObject];
+    return object;
 }
 
 @end

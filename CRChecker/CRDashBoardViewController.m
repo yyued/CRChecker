@@ -7,6 +7,7 @@
 //
 
 #import "CRDashBoardViewController.h"
+#import "CRObjectBoardViewController.h"
 #import "CRCounter.h"
 
 static NSSet *systemLibraries;
@@ -175,6 +176,13 @@ static NSSet *systemLibraries;
     cell.textLabel.text = [NSString stringWithFormat:@"%@", keyString];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Alive:%@", [self finalCounterDictionary][keyString]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *keyString = [[self finalCounterDictionary] allKeys][indexPath.row];
+    CRObjectBoardViewController *objectBoardViewController = [[CRObjectBoardViewController alloc] initWithNibName:nil bundle:nil];
+    objectBoardViewController.className = keyString;
+    [self.navigationController pushViewController:objectBoardViewController animated:YES];
 }
 
 #pragma mark - self.optionButton
