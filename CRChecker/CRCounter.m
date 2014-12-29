@@ -7,6 +7,7 @@
 //
 
 #import "CRCounter.h"
+#import <UIKit/UIKit.h>
 
 static NSSet *customClassPrefix;
 static NSMutableDictionary *counterDictionary;
@@ -41,6 +42,9 @@ static dispatch_queue_t counterQueue = NULL;
         return;
     }
     dispatch_sync(counterQueue, ^{
+        if (![self isBundleClass:argClass]) {
+            return;
+        }
         NSString *className = NSStringFromClass(argClass);
         NSNumber *countNumber = [counterDictionary valueForKey:className];
         if (countNumber == nil) {
@@ -58,6 +62,9 @@ static dispatch_queue_t counterQueue = NULL;
         return;
     }
     dispatch_sync(counterQueue, ^{
+        if (![self isBundleClass:argClass]) {
+            return;
+        }
         NSString *className = NSStringFromClass(argClass);
         NSNumber *countNumber = [counterDictionary valueForKey:className];
         if (countNumber == nil) {
@@ -80,6 +87,16 @@ static dispatch_queue_t counterQueue = NULL;
         }
     }
     return NO;
+}
+
++ (BOOL)isBundleClass:(Class)argClass {
+    if ([[[[UIApplication sharedApplication] delegate] window] rootViewController] == nil) {
+        return NO;
+    }
+    else {
+        NSBundle *classBundle = [NSBundle bundleForClass:argClass];
+        return classBundle == [NSBundle mainBundle];
+    }
 }
 
 @end

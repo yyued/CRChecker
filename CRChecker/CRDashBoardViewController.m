@@ -193,17 +193,13 @@ static NSSet *systemLibraries;
                                                              delegate:self
                                                     cancelButtonTitle:@"Cancel"
                                                destructiveButtonTitle:nil
-                                                    otherButtonTitles:@"Show/Hide System Libraries", @"Refresh Data", @"Close DashBoard",
+                                                    otherButtonTitles:@"Refresh Data", @"Close DashBoard",
                                   nil];
     [actionSheet showInView:[[[UIApplication sharedApplication] delegate] window]];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Show/Hide System Libraries"]) {
-        self.showSystemLibraries = !self.showSystemLibraries;
-        [self refreshCounterArrayData];
-    }
-    else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Refresh Data"]) {
+    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Refresh Data"]) {
         [self refreshCounterArrayData];
     }
     else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Close DashBoard"]) {
