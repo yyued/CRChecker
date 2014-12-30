@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CRChecker"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "CRChecker is a debug tool, helps you find out circular reference problem."
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/duowan/CRChecker.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/duowan/CRChecker.git", :tag => "1.0.2" }
 
   s.source_files  = "CRChecker", "CRChecker/*.{h,m}"
 
