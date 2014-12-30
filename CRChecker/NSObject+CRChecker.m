@@ -30,18 +30,23 @@ static CRStatusBar *statusBar;
 }
 
 - (instancetype)cr_init {
-    if ([UIApplication sharedApplication] != nil) {
-        if ([statusBar superview] == nil) {
-            [[[[UIApplication sharedApplication] delegate] window] performSelector:@selector(addSubview:) withObject:statusBar afterDelay:10.0];
-        }
-        else {
-            [[[[UIApplication sharedApplication] delegate] window] setWindowLevel:UIWindowLevelStatusBar];
-        }
-        [CRCounter increaseWithClass:[self class]];
+    if ([NSBundle bundleForClass:[self class]] != [NSBundle mainBundle]) {
+        return [self cr_init];
     }
-    id object = [self cr_init];
-    [object cr_storagerAddObject];
-    return object;
+    else {
+        if ([UIApplication sharedApplication] != nil) {
+            if ([statusBar superview] == nil) {
+                [[[[UIApplication sharedApplication] delegate] window] performSelector:@selector(addSubview:) withObject:statusBar afterDelay:10.0];
+            }
+            else {
+                [[[[UIApplication sharedApplication] delegate] window] setWindowLevel:UIWindowLevelStatusBar];
+            }
+            [CRCounter increaseWithClass:[self class]];
+        }
+        id object = [self cr_init];
+        [object cr_storagerAddObject];
+        return object;
+    }
 }
 
 @end
