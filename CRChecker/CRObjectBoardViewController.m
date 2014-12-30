@@ -100,11 +100,12 @@
             }
             else {
                 cell.textLabel.text = @"None information provided.";
+                cell.detailTextLabel.text = @"";
             }
         }
         else if (indexPath.row == 2) {
             cell.textLabel.text = @"Debug";
-            cell.detailTextLabel.text = @"Tap!";
+            cell.detailTextLabel.text = @"Set breakpoint, then Tap!";
         }
     }
     return cell;

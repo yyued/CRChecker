@@ -9,6 +9,7 @@
 #import "CRDashBoardViewController.h"
 #import "CRObjectBoardViewController.h"
 #import "CRCounter.h"
+#import "NSObject+CRObjectStorager.h"
 
 static NSSet *systemLibraries;
 
@@ -175,6 +176,12 @@ static NSSet *systemLibraries;
     NSString *keyString = [[self finalCounterDictionary] allKeys][indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", keyString];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Alive:%@", [self finalCounterDictionary][keyString]];
+    if ([self isSuspicious:keyString]) {
+        cell.detailTextLabel.textColor = [UIColor redColor];
+    }
+    else {
+        cell.detailTextLabel.textColor = [UIColor grayColor];
+    }
     return cell;
 }
 
@@ -213,6 +220,26 @@ static NSSet *systemLibraries;
     else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Close DashBoard"]) {
         [self dismissModalViewControllerAnimated:YES];
     }
+}
+
+#pragma mark - Circular Objects Detector
+
+- (BOOL)isSuspicious:(NSString *)argClassName {
+    NSArray *classObjects = [NSObject objectsForClass:NSClassFromString(argClassName)];
+    for (CRObjectStorageItem *storageItem in classObjects) {
+        __strong id strongObject = storageItem.theObject;
+        if (strongObject != nil &&
+            [strongObject isKindOfClass:[UIViewController class]] &&
+            [strongObject parentViewController] == nil) {
+            return YES;
+        }
+        else if (strongObject != nil &&
+            [strongObject isKindOfClass:[UIView class]] &&
+            [strongObject superview] == nil) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 @end
