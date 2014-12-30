@@ -8,6 +8,7 @@
 
 #import "DemoFirstViewController.h"
 #import "DemoSecondViewController.h"
+#import "DemoNormalViewController.h"
 #import "CRChecker.h"
 
 @interface DemoFirstViewController ()
@@ -40,6 +41,11 @@
 - (IBAction)handleSecondViewControllerButtonTapped:(id)sender {
     DemoSecondViewController *nextViewController = [[DemoSecondViewController alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:nextViewController animated:YES];
+}
+
+- (IBAction)handleNormalViewControllerButtonTapped:(id)sender {
+    DemoNormalViewController *normalViewController = [[DemoNormalViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:normalViewController animated:YES];
 }
 
 - (IBAction)handleDashboardButtonTapped:(id)sender {

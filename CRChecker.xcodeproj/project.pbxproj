@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */; };
 		6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338591A4D1D8800BE6497 /* CRStatusBar.m */; };
+		6322C5DF1A52535C008A1C1A /* DemoNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322C5DD1A52535C008A1C1A /* DemoNormalViewController.m */; };
+		6322C5E01A52535C008A1C1A /* DemoNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6322C5DE1A52535C008A1C1A /* DemoNormalViewController.xib */; };
 		F014BD7C1A4C5FD20009F87E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7B1A4C5FD20009F87E /* main.m */; };
 		F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7E1A4C5FD20009F87E /* DemoAppDelegate.m */; };
 		F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD811A4C5FD20009F87E /* DemoSecondViewController.m */; };
@@ -41,6 +43,9 @@
 		631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDashBoardViewController.m; sourceTree = "<group>"; };
 		631338581A4D1D8800BE6497 /* CRStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRStatusBar.h; sourceTree = "<group>"; };
 		631338591A4D1D8800BE6497 /* CRStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRStatusBar.m; sourceTree = "<group>"; };
+		6322C5DC1A52535C008A1C1A /* DemoNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoNormalViewController.h; sourceTree = "<group>"; };
+		6322C5DD1A52535C008A1C1A /* DemoNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNormalViewController.m; sourceTree = "<group>"; };
+		6322C5DE1A52535C008A1C1A /* DemoNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoNormalViewController.xib; sourceTree = "<group>"; };
 		F014BD771A4C5FD20009F87E /* CRCheckerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRCheckerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F014BD7A1A4C5FD20009F87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F014BD7B1A4C5FD20009F87E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,6 +148,9 @@
 				F014BDAB1A4C6F730009F87E /* DemoModalViewController.h */,
 				F014BDAC1A4C6F730009F87E /* DemoModalViewController.m */,
 				F014BDAD1A4C6F730009F87E /* DemoModalViewController.xib */,
+				6322C5DC1A52535C008A1C1A /* DemoNormalViewController.h */,
+				6322C5DD1A52535C008A1C1A /* DemoNormalViewController.m */,
+				6322C5DE1A52535C008A1C1A /* DemoNormalViewController.xib */,
 				F014BD861A4C5FD20009F87E /* Images.xcassets */,
 				F014BD791A4C5FD20009F87E /* Supporting Files */,
 			);
@@ -258,6 +266,7 @@
 				F014BDAF1A4C6F730009F87E /* DemoModalViewController.xib in Resources */,
 				F014BDB41A4C72680009F87E /* DemoFirstViewController.xib in Resources */,
 				F014BDAA1A4C6F190009F87E /* DemoSecondViewController.xib in Resources */,
+				6322C5E01A52535C008A1C1A /* DemoNormalViewController.xib in Resources */,
 				F014BD871A4C5FD20009F87E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +294,7 @@
 				631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */,
 				F014BDA51A4C636D0009F87E /* NSObject+CRChecker.m in Sources */,
 				F014BDA81A4C64340009F87E /* CRCounter.m in Sources */,
+				6322C5DF1A52535C008A1C1A /* DemoNormalViewController.m in Sources */,
 				F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */,
 				F014BD7C1A4C5FD20009F87E /* main.m in Sources */,
 				F014BDB31A4C72680009F87E /* DemoFirstViewController.m in Sources */,
