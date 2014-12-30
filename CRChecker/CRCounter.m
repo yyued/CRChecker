@@ -56,7 +56,12 @@ static dispatch_queue_t counterQueue = NULL;
         NSNumber *countNumber = [counterDictionary valueForKey:className];
         if (countNumber != nil) {
             countNumber = @([countNumber integerValue]-1);
-            [counterDictionary setObject:countNumber forKey:className];
+            if ([countNumber integerValue] <= 0) {
+                [counterDictionary removeObjectForKey:className];
+            }
+            else {
+                [counterDictionary setObject:countNumber forKey:className];
+            }
         }
     });
 }
