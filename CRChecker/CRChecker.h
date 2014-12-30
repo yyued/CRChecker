@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRDefines.h"
 
 @interface CRChecker : NSObject
 
@@ -19,5 +20,13 @@
  *  Present Dash Board
  */
 + (void)presentDashBoardViewController;
+
+@end
+
+@interface CRChecker (Private)
+
++ (BOOL)isBundleClass:(Class)argClass;
+
++ (BOOL)isCustomPrefixClass:(Class)argClass;
 
 @end

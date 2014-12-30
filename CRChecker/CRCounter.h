@@ -7,15 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRDefines.h"
 
 @interface CRCounter : NSObject
 
-+ (void)addCustomClassPrefix:(NSString *)argPrefix;
-
-+ (NSDictionary *)counterDictionary;
-
-+ (void)increaseWithClass:(Class)argClass;
++ (void)increaseWithObject:(id)argObject;
 
 + (void)decreaseWithClass:(Class)argClass;
+
+@end
+
+@interface CRCounter (Private)
+
++ (NSDictionary *)counterDictionary;
 
 @end

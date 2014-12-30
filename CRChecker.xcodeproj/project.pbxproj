@@ -7,26 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */; };
-		6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338591A4D1D8800BE6497 /* CRStatusBar.m */; };
 		6322C5DF1A52535C008A1C1A /* DemoNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322C5DD1A52535C008A1C1A /* DemoNormalViewController.m */; };
 		6322C5E01A52535C008A1C1A /* DemoNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6322C5DE1A52535C008A1C1A /* DemoNormalViewController.xib */; };
-		6322C5E61A526C7E008A1C1A /* UIWindow+CRWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322C5E51A526C7E008A1C1A /* UIWindow+CRWindow.m */; };
+		63EDFC431A5270EA002F780C /* CRCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EDFC421A5270EA002F780C /* CRCategories.m */; };
+		63EDFC461A52710E002F780C /* CRReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EDFC451A52710E002F780C /* CRReporter.m */; };
+		63EDFC491A5288BD002F780C /* CRStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EDFC481A5288BD002F780C /* CRStorage.m */; };
 		F014BD7C1A4C5FD20009F87E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7B1A4C5FD20009F87E /* main.m */; };
 		F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7E1A4C5FD20009F87E /* DemoAppDelegate.m */; };
 		F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD811A4C5FD20009F87E /* DemoSecondViewController.m */; };
 		F014BD871A4C5FD20009F87E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F014BD861A4C5FD20009F87E /* Images.xcassets */; };
 		F014BD961A4C5FD20009F87E /* CRCheckerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD951A4C5FD20009F87E /* CRCheckerDemoTests.m */; };
 		F014BD9F1A4C60350009F87E /* CRChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD9E1A4C60350009F87E /* CRChecker.m */; };
-		F014BDA51A4C636D0009F87E /* NSObject+CRChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDA41A4C636D0009F87E /* NSObject+CRChecker.m */; };
 		F014BDA81A4C64340009F87E /* CRCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDA71A4C64340009F87E /* CRCounter.m */; };
 		F014BDAA1A4C6F190009F87E /* DemoSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDA91A4C6F190009F87E /* DemoSecondViewController.xib */; };
 		F014BDAE1A4C6F730009F87E /* DemoModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDAC1A4C6F730009F87E /* DemoModalViewController.m */; };
 		F014BDAF1A4C6F730009F87E /* DemoModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDAD1A4C6F730009F87E /* DemoModalViewController.xib */; };
 		F014BDB31A4C72680009F87E /* DemoFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BDB11A4C72680009F87E /* DemoFirstViewController.m */; };
 		F014BDB41A4C72680009F87E /* DemoFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F014BDB21A4C72680009F87E /* DemoFirstViewController.xib */; };
-		F08EE7411A519B700037FBDA /* NSObject+CRObjectStorager.m in Sources */ = {isa = PBXBuildFile; fileRef = F08EE7401A519B700037FBDA /* NSObject+CRObjectStorager.m */; };
-		F08EE7441A51AA4A0037FBDA /* CRObjectBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08EE7431A51AA4A0037FBDA /* CRObjectBoardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		631338551A4CFFC800BE6497 /* CRDashBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDashBoardViewController.h; sourceTree = "<group>"; };
-		631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDashBoardViewController.m; sourceTree = "<group>"; };
-		631338581A4D1D8800BE6497 /* CRStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRStatusBar.h; sourceTree = "<group>"; };
-		631338591A4D1D8800BE6497 /* CRStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRStatusBar.m; sourceTree = "<group>"; };
 		6322C5DC1A52535C008A1C1A /* DemoNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoNormalViewController.h; sourceTree = "<group>"; };
 		6322C5DD1A52535C008A1C1A /* DemoNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNormalViewController.m; sourceTree = "<group>"; };
 		6322C5DE1A52535C008A1C1A /* DemoNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoNormalViewController.xib; sourceTree = "<group>"; };
-		6322C5E41A526C7E008A1C1A /* UIWindow+CRWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CRWindow.h"; sourceTree = "<group>"; };
-		6322C5E51A526C7E008A1C1A /* UIWindow+CRWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CRWindow.m"; sourceTree = "<group>"; };
+		6322C5E71A52707B008A1C1A /* CRDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDefines.h; sourceTree = "<group>"; };
+		63EDFC411A5270EA002F780C /* CRCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCategories.h; sourceTree = "<group>"; };
+		63EDFC421A5270EA002F780C /* CRCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCategories.m; sourceTree = "<group>"; };
+		63EDFC441A52710E002F780C /* CRReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRReporter.h; sourceTree = "<group>"; };
+		63EDFC451A52710E002F780C /* CRReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRReporter.m; sourceTree = "<group>"; };
+		63EDFC471A5288BD002F780C /* CRStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRStorage.h; sourceTree = "<group>"; };
+		63EDFC481A5288BD002F780C /* CRStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRStorage.m; sourceTree = "<group>"; };
 		F014BD771A4C5FD20009F87E /* CRCheckerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRCheckerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F014BD7A1A4C5FD20009F87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F014BD7B1A4C5FD20009F87E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,8 +60,6 @@
 		F014BD951A4C5FD20009F87E /* CRCheckerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRCheckerDemoTests.m; sourceTree = "<group>"; };
 		F014BD9D1A4C60350009F87E /* CRChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRChecker.h; sourceTree = "<group>"; };
 		F014BD9E1A4C60350009F87E /* CRChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRChecker.m; sourceTree = "<group>"; };
-		F014BDA31A4C636D0009F87E /* NSObject+CRChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CRChecker.h"; sourceTree = "<group>"; };
-		F014BDA41A4C636D0009F87E /* NSObject+CRChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CRChecker.m"; sourceTree = "<group>"; };
 		F014BDA61A4C64340009F87E /* CRCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCounter.h; sourceTree = "<group>"; };
 		F014BDA71A4C64340009F87E /* CRCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCounter.m; sourceTree = "<group>"; };
 		F014BDA91A4C6F190009F87E /* DemoSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoSecondViewController.xib; sourceTree = "<group>"; };
@@ -73,10 +69,6 @@
 		F014BDB01A4C72680009F87E /* DemoFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFirstViewController.h; sourceTree = "<group>"; };
 		F014BDB11A4C72680009F87E /* DemoFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFirstViewController.m; sourceTree = "<group>"; };
 		F014BDB21A4C72680009F87E /* DemoFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoFirstViewController.xib; sourceTree = "<group>"; };
-		F08EE73F1A519B700037FBDA /* NSObject+CRObjectStorager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CRObjectStorager.h"; sourceTree = "<group>"; };
-		F08EE7401A519B700037FBDA /* NSObject+CRObjectStorager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CRObjectStorager.m"; sourceTree = "<group>"; };
-		F08EE7421A51AA4A0037FBDA /* CRObjectBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRObjectBoardViewController.h; sourceTree = "<group>"; };
-		F08EE7431A51AA4A0037FBDA /* CRObjectBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRObjectBoardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,22 +111,17 @@
 		F014BD4C1A4C5E920009F87E /* CRChecker */ = {
 			isa = PBXGroup;
 			children = (
+				6322C5E71A52707B008A1C1A /* CRDefines.h */,
 				F014BD9D1A4C60350009F87E /* CRChecker.h */,
 				F014BD9E1A4C60350009F87E /* CRChecker.m */,
 				F014BDA61A4C64340009F87E /* CRCounter.h */,
 				F014BDA71A4C64340009F87E /* CRCounter.m */,
-				F014BDA31A4C636D0009F87E /* NSObject+CRChecker.h */,
-				F014BDA41A4C636D0009F87E /* NSObject+CRChecker.m */,
-				F08EE73F1A519B700037FBDA /* NSObject+CRObjectStorager.h */,
-				F08EE7401A519B700037FBDA /* NSObject+CRObjectStorager.m */,
-				631338551A4CFFC800BE6497 /* CRDashBoardViewController.h */,
-				631338561A4CFFC800BE6497 /* CRDashBoardViewController.m */,
-				F08EE7421A51AA4A0037FBDA /* CRObjectBoardViewController.h */,
-				F08EE7431A51AA4A0037FBDA /* CRObjectBoardViewController.m */,
-				631338581A4D1D8800BE6497 /* CRStatusBar.h */,
-				631338591A4D1D8800BE6497 /* CRStatusBar.m */,
-				6322C5E41A526C7E008A1C1A /* UIWindow+CRWindow.h */,
-				6322C5E51A526C7E008A1C1A /* UIWindow+CRWindow.m */,
+				63EDFC411A5270EA002F780C /* CRCategories.h */,
+				63EDFC421A5270EA002F780C /* CRCategories.m */,
+				63EDFC441A52710E002F780C /* CRReporter.h */,
+				63EDFC451A52710E002F780C /* CRReporter.m */,
+				63EDFC471A5288BD002F780C /* CRStorage.h */,
+				63EDFC481A5288BD002F780C /* CRStorage.m */,
 			);
 			path = CRChecker;
 			sourceTree = "<group>";
@@ -292,18 +279,15 @@
 			files = (
 				F014BD9F1A4C60350009F87E /* CRChecker.m in Sources */,
 				F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */,
-				6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */,
-				F08EE7441A51AA4A0037FBDA /* CRObjectBoardViewController.m in Sources */,
-				6322C5E61A526C7E008A1C1A /* UIWindow+CRWindow.m in Sources */,
-				F08EE7411A519B700037FBDA /* NSObject+CRObjectStorager.m in Sources */,
 				F014BDAE1A4C6F730009F87E /* DemoModalViewController.m in Sources */,
-				631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */,
-				F014BDA51A4C636D0009F87E /* NSObject+CRChecker.m in Sources */,
+				63EDFC431A5270EA002F780C /* CRCategories.m in Sources */,
 				F014BDA81A4C64340009F87E /* CRCounter.m in Sources */,
 				6322C5DF1A52535C008A1C1A /* DemoNormalViewController.m in Sources */,
 				F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */,
 				F014BD7C1A4C5FD20009F87E /* main.m in Sources */,
+				63EDFC491A5288BD002F780C /* CRStorage.m in Sources */,
 				F014BDB31A4C72680009F87E /* DemoFirstViewController.m in Sources */,
+				63EDFC461A52710E002F780C /* CRReporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

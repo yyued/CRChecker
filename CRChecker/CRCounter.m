@@ -7,45 +7,32 @@
 //
 
 #import "CRCounter.h"
-#import <UIKit/UIKit.h>
 
-static NSSet *customClassPrefix;
 static NSMutableDictionary *counterDictionary;
+static NSMutableSet *counterSet;
 static dispatch_queue_t counterQueue = NULL;
 
 @implementation CRCounter
 
 + (void)load {
     counterDictionary = [NSMutableDictionary dictionary];
-    customClassPrefix = nil;
+    counterSet = [NSMutableSet set];
     counterQueue = dispatch_queue_create("CRCheckerCounterQueue", NULL);
-}
-
-+ (void)addCustomClassPrefix:(NSString *)argPrefix {
-    dispatch_sync(counterQueue, ^{
-        if (customClassPrefix == nil) {
-            [counterDictionary removeAllObjects];
-            customClassPrefix = [NSSet set];
-        }
-        NSMutableSet *mutableCustoClassPrefix = [customClassPrefix mutableCopy];
-        [mutableCustoClassPrefix addObject:argPrefix];
-        customClassPrefix = [mutableCustoClassPrefix copy];
-    });
 }
 
 + (NSDictionary *)counterDictionary {
     return [counterDictionary copy];
 }
 
-+ (void)increaseWithClass:(Class)argClass {
-    if ([self isCustomClass:argClass]) {
++ (void)increaseWithObject:(id)argObject {
+    if (![CRChecker isCustomPrefixClass:[argObject class]]) {
         return;
     }
     dispatch_async(counterQueue, ^{
-        if (![self isBundleClass:argClass]) {
+        if (![CRChecker isBundleClass:[argObject class]]) {
             return;
         }
-        NSString *className = NSStringFromClass(argClass);
+        NSString *className = NSStringFromClass([argObject class]);
         NSNumber *countNumber = [counterDictionary valueForKey:className];
         if (countNumber == nil) {
             countNumber = @(1);
@@ -58,45 +45,20 @@ static dispatch_queue_t counterQueue = NULL;
 }
 
 + (void)decreaseWithClass:(Class)argClass {
-    if ([self isCustomClass:argClass]) {
+    if (![CRChecker isCustomPrefixClass:argClass]) {
         return;
     }
     dispatch_async(counterQueue, ^{
-        if (![self isBundleClass:argClass]) {
+        if (![CRChecker isBundleClass:argClass]) {
             return;
         }
         NSString *className = NSStringFromClass(argClass);
         NSNumber *countNumber = [counterDictionary valueForKey:className];
-        if (countNumber == nil) {
-            countNumber = @(0);
-        }
-        else {
+        if (countNumber != nil) {
             countNumber = @([countNumber integerValue]-1);
+            [counterDictionary setObject:countNumber forKey:className];
         }
-        [counterDictionary setObject:countNumber forKey:className];
     });
-}
-
-+ (BOOL)isCustomClass:(Class)argClass {
-    if (customClassPrefix != nil) {
-        for (NSString *classPrefix in customClassPrefix) {
-            NSString *className = NSStringFromClass(argClass);
-            if (![className hasPrefix:classPrefix]) {
-                return YES;
-            }
-        }
-    }
-    return NO;
-}
-
-+ (BOOL)isBundleClass:(Class)argClass {
-    if ([[[[UIApplication sharedApplication] delegate] window] rootViewController] == nil) {
-        return NO;
-    }
-    else {
-        NSBundle *classBundle = [NSBundle bundleForClass:argClass];
-        return classBundle == [NSBundle mainBundle];
-    }
 }
 
 @end

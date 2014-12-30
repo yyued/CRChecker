@@ -7,22 +7,40 @@
 //
 
 #import "CRChecker.h"
-#import "CRCounter.h"
-#import "CRDashBoardViewController.h"
-#import "NSObject+CRChecker.h"
 #import <objc/runtime.h>
-#import "UIWindow+CRWindow.h"
+
+static NSSet *customClassPrefix;
 
 @implementation CRChecker
 
-+ (void)addCustomClassPrefix:(NSString *)argPrefix {
-    [CRCounter addCustomClassPrefix:argPrefix];
++ (void)load {
+    customClassPrefix = nil;
 }
 
-+ (void)load {
-    Method originalInitMethod =  class_getInstanceMethod([UIWindow class], @selector(makeKeyAndVisible));
-    Method swizzInitMethod = class_getInstanceMethod([UIWindow class], @selector(cr_makeKeyAndVisible));
-    method_exchangeImplementations(originalInitMethod, swizzInitMethod);
++ (void)addCustomClassPrefix:(NSString *)argPrefix {
+    if (customClassPrefix == nil) {
+        customClassPrefix = [NSSet set];
+    }
+    NSMutableSet *mutableSet = [customClassPrefix mutableCopy];
+    [mutableSet addObject:argPrefix];
+    customClassPrefix = [mutableSet copy];
+}
+
++ (BOOL)isBundleClass:(Class)argClass {
+    return [NSBundle bundleForClass:argClass] == [NSBundle mainBundle];
+}
+
++ (BOOL)isCustomPrefixClass:(Class)argClass {
+    if (customClassPrefix == nil) {
+        return YES;
+    }
+    NSString *className = NSStringFromClass(argClass);
+    for (NSString *customClassPrefixItem in customClassPrefix) {
+        if ([className hasPrefix:customClassPrefixItem]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 + (void)presentDashBoardViewController {
