@@ -3,36 +3,47 @@ CRChecker
 
 Objective-C Circular Reference Checker
 
-Here's another way to find circular reference problem tool, instare of 'Instrument Leaks Tool', CRChecker use runtime swizzling init/dealloc method.
+## How can we find out circular reference problem?
 
-* Demo
+It's not a difficult issue.
 
-I wrote this code to create a reference problem.
+We just swizzling Objective-C init and dealloc method, every object will execute these method at live cycle start and end.
 
-![Code01](https://github.com/duowan/CRChecker/raw/master/ReadmeResource/DemoCode01.png)
+If your instanced object has circular reference problem. These object may not be dealloc.
 
-![Code02](https://github.com/duowan/CRChecker/raw/master/ReadmeResource/DemoCode02.png)
+So, we set a counter, just make all classes init +1, dealloc -1.
 
-![Code03](https://github.com/duowan/CRChecker/raw/master/ReadmeResource/DemoCode03.png)
+You see, the dashBoard data source came here.
 
-When We try to enter DemoSecondViewController and present DemoModalViewController, again and again.
+![](https://github.com/duowan/CRChecker/raw/master/ReadmeResource/DemoScreen01.png)
 
-Now, present The DashBoardViewController.
+## Usage
 
-![Screen01](https://github.com/duowan/CRChecker/raw/master/ReadmeResource/DemoScreen01.png)
+It's really easy to use this tool.
 
-You see, The DemoSecondViewController and DemoModalViewController still 4 objects alive. Normally, it should be zero.
+Be careful, this tool should not use under production.
 
-And you find a circular reference problem, try to fix it.
+If you use CocoaPods
+1. Podfile add `Pod 'CRChecker'`
+2. pod update
+3. It's OK~
 
-* Usage
+If you eager use source code
+1. Go to Github Download latest version zip.
+2. Add CRChecker/CRChecker files into your project
+3. It's OK~
 
-pod "CRChecker" or "Download ZIP -> add CRChecker Dir.'s file to your project"
+## Counter will not record system libraries class.
 
-If you eagering check your Prefix class Only.
+Version 1.0.1
 
-use ` [CRChecker addCustomClassPrefix:@"Demo"];`
+CRCounter will not record any system libraries. That's because, we think developer should focus on your code.
 
-CRChecker will record all Classes belong [NSBundle MainBundle]
+## Counter could only record custom prefix class.
 
-V1.0.1 And now, you are able to access(debug) every objects. ~ 2014.11.29
+add this line to your code
+
+[CRChecker addCustomClassPrefix:@"Demo"];
+
+Only Demo Prefix Classes will be record. 
+
