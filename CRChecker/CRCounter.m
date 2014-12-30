@@ -41,7 +41,7 @@ static dispatch_queue_t counterQueue = NULL;
     if ([self isCustomClass:argClass]) {
         return;
     }
-    dispatch_sync(counterQueue, ^{
+    dispatch_async(counterQueue, ^{
         if (![self isBundleClass:argClass]) {
             return;
         }
@@ -61,7 +61,7 @@ static dispatch_queue_t counterQueue = NULL;
     if ([self isCustomClass:argClass]) {
         return;
     }
-    dispatch_sync(counterQueue, ^{
+    dispatch_async(counterQueue, ^{
         if (![self isBundleClass:argClass]) {
             return;
         }

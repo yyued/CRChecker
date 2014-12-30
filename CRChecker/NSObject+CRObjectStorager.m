@@ -50,7 +50,7 @@ static dispatch_queue_t storagerQueue;
         [[[[UIApplication sharedApplication] delegate] window] rootViewController] != nil &&
         [NSObject isBundleClass:[self class]] &&
         [strongSelf class] != [CRObjectStorageItem class]) {
-        dispatch_sync(storagerQueue, ^{
+        dispatch_async(storagerQueue, ^{
             CRObjectStorageItem *item = [[CRObjectStorageItem alloc] init];
             item.theClass = [self class];
             item.theObject = strongSelf;
