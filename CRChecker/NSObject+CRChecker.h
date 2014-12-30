@@ -10,7 +10,7 @@
 
 @interface NSObject (CRChecker)
 
-- (instancetype)cr_init;
+- (instancetype)initWithCRChecker;
 
 - (void)cr_dealloc;
 

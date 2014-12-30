@@ -11,6 +11,7 @@
 #import "CRDashBoardViewController.h"
 #import "NSObject+CRChecker.h"
 #import <objc/runtime.h>
+#import "UIWindow+CRWindow.h"
 
 @implementation CRChecker
 
@@ -19,13 +20,9 @@
 }
 
 + (void)load {
-    Method originalInitMethod =  class_getInstanceMethod([NSObject class], @selector(init));
-    Method swizzInitMethod = class_getInstanceMethod([NSObject class], @selector(cr_init));
+    Method originalInitMethod =  class_getInstanceMethod([UIWindow class], @selector(makeKeyAndVisible));
+    Method swizzInitMethod = class_getInstanceMethod([UIWindow class], @selector(cr_makeKeyAndVisible));
     method_exchangeImplementations(originalInitMethod, swizzInitMethod);
-    
-    Method originalDeallocMethod =  class_getInstanceMethod([NSObject class], NSSelectorFromString(@"dealloc"));
-    Method swizzDeallocMethod = class_getInstanceMethod([NSObject class], @selector(cr_dealloc));
-    method_exchangeImplementations(originalDeallocMethod, swizzDeallocMethod);
 }
 
 + (void)presentDashBoardViewController {

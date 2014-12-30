@@ -11,6 +11,7 @@
 		6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 631338591A4D1D8800BE6497 /* CRStatusBar.m */; };
 		6322C5DF1A52535C008A1C1A /* DemoNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322C5DD1A52535C008A1C1A /* DemoNormalViewController.m */; };
 		6322C5E01A52535C008A1C1A /* DemoNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6322C5DE1A52535C008A1C1A /* DemoNormalViewController.xib */; };
+		6322C5E61A526C7E008A1C1A /* UIWindow+CRWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322C5E51A526C7E008A1C1A /* UIWindow+CRWindow.m */; };
 		F014BD7C1A4C5FD20009F87E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7B1A4C5FD20009F87E /* main.m */; };
 		F014BD7F1A4C5FD20009F87E /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD7E1A4C5FD20009F87E /* DemoAppDelegate.m */; };
 		F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014BD811A4C5FD20009F87E /* DemoSecondViewController.m */; };
@@ -46,6 +47,8 @@
 		6322C5DC1A52535C008A1C1A /* DemoNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoNormalViewController.h; sourceTree = "<group>"; };
 		6322C5DD1A52535C008A1C1A /* DemoNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNormalViewController.m; sourceTree = "<group>"; };
 		6322C5DE1A52535C008A1C1A /* DemoNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoNormalViewController.xib; sourceTree = "<group>"; };
+		6322C5E41A526C7E008A1C1A /* UIWindow+CRWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CRWindow.h"; sourceTree = "<group>"; };
+		6322C5E51A526C7E008A1C1A /* UIWindow+CRWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CRWindow.m"; sourceTree = "<group>"; };
 		F014BD771A4C5FD20009F87E /* CRCheckerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRCheckerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F014BD7A1A4C5FD20009F87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F014BD7B1A4C5FD20009F87E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				F08EE7431A51AA4A0037FBDA /* CRObjectBoardViewController.m */,
 				631338581A4D1D8800BE6497 /* CRStatusBar.h */,
 				631338591A4D1D8800BE6497 /* CRStatusBar.m */,
+				6322C5E41A526C7E008A1C1A /* UIWindow+CRWindow.h */,
+				6322C5E51A526C7E008A1C1A /* UIWindow+CRWindow.m */,
 			);
 			path = CRChecker;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				F014BD821A4C5FD20009F87E /* DemoSecondViewController.m in Sources */,
 				6313385A1A4D1D8800BE6497 /* CRStatusBar.m in Sources */,
 				F08EE7441A51AA4A0037FBDA /* CRObjectBoardViewController.m in Sources */,
+				6322C5E61A526C7E008A1C1A /* UIWindow+CRWindow.m in Sources */,
 				F08EE7411A519B700037FBDA /* NSObject+CRObjectStorager.m in Sources */,
 				F014BDAE1A4C6F730009F87E /* DemoModalViewController.m in Sources */,
 				631338571A4CFFC800BE6497 /* CRDashBoardViewController.m in Sources */,
