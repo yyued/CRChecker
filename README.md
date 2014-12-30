@@ -47,3 +47,6 @@ add this line to your code
 
 Only Demo Prefix Classes will be record. 
 
+
+## Wiki
+More advanced usage or Simple Chinese Direction, see Wiki.
